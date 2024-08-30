@@ -1,0 +1,28 @@
+Commands Used While Migrating the React Project:
+# Check outdated packages
+npm outdated
+
+# Update dependencies
+npm install <packagenames>@latest
+
+# Clear npm cache (optional)
+npm cache clean --force
+
+# Remove node_modules and package-lock.json
+rm -rf node_modules package-lock.json
+
+# Reinstall dependencies
+npm install
+
+# Run audit again to verify
+npm audit
+
+#Run audit fix to fix the vulnerabilities
+npm audit fix
+
+#Run the linting process to check if the configuration is correctly applied
+npm run lint
+
+#to check the unused dependencies, that cause the conflicts between the versions
+npm install -g depcheck
+
